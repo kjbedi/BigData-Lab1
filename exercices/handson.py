@@ -3,14 +3,21 @@
 # Given a list of numbers, return the average of the list.
 # If numbers equal [10, 10, 15, 7], the return value should be 10.5
 def avg(numbers):
-  # +++your code here+++
-  return
+    length_of_numbers = len(numbers)
+    sum = 0
+    for x in numbers:
+        sum = sum + x
+    return sum/length_of_numbers
 
 # B. both_ends
 # Given a string s, return a string made of the first 2
 # and the last 2 chars of the original string,
 # so 'spring' yields 'spng'. However, if the string length
 # is less than 2, return instead the empty string.
+
+def test_avg():
+    assert avg([10, 10, 15, 7]) == 10.5
+
 def both_ends(s):
   # +++your code here+++
   return
